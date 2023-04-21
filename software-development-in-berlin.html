@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Software Development in Berlin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Software Development from Berlin with TypeScript, JavaScript and/or Python. Have worked as a professional for over 10 years.">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <style>
+      body {
+        min-height: 100vh;
+      }
+
+      @media print {
+        #profile-image-column {
+          text-align: right !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" style="min-height: 100vh; position: relative;">
+      <h1 class="text-center">Software Development in Berlin</h1>
+
+      <h2 class="text-center">Profile</h2>
+
+      <div class="row">
+        <div id="profile-image-column" class="col text-center text-md-end">
+          <img src="jonas.png" alt="Jonas Aschenbrenner">
+        </div>
+        <div class="col mt-2 mt-md-0">
+          <dl>
+            <dt>Name</dt>
+            <dd>Jonas Aschenbrenner</dd>
+
+            <dt>Born on</dt>
+            <dd>9th of November 1991</dd>
+
+            <dt>Age</dt>
+            <dd>
+              <script>
+
+                const birthDate = new Date('1991-11-09')
+                const now = new Date()
+
+                let age = now.getFullYear() - birthDate.getFullYear() - 1
+                if (now.getMonth() > birthDate.getMonth() || (now.getMonth() === birthDate.getMonth() && now.getDay() >= birthDate.getDay())) {
+                  age++
+                }
+
+                document.write(age)
+              </script>
+            </dd>
+          </dl>
+
+          <h3>Skills</h3>
+
+          <dl class="mb-0">
+            <dt>Spoken languages</dt>
+            <dd>German and English</dd>
+
+            <dt>Programming languages</dt>
+            <dd>TypeScript, JavaScript, Python, Lua, PHP, C#, C++</dd>
+
+            <dt>Libraries</dt>
+            <dd>React, Lodash, Meteor.js</dd>
+
+            <dt>Other tools</dt>
+            <dd>Git, GitHub</dd>
+
+            <dt>Cloud platforms</dt>
+            <dd class="mb-0">AWS, Google Firebase</dd>
+          </dl>
+        </div>
+      </div>
+
+      <h2 class="text-center mt-4">Portfolio</h2>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://www.getshare911.com/" target="_blank">Share911</a>
+              </h5>
+              <p class="card-text">
+                I have helped with the development of new features and changes.
+                Some tasks were:
+              </p>
+               <ul>
+                 <li>architecting and implementing a system with a higher reliability</li>
+                 <li>implementing a UI refresh</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">
+                <a href="https://web.archive.org/web/20170710084056/http://www.simian.io/" target="_blank">Simian.io</a>
+              </h5>
+              <p class="card-text">
+                I have helped with the development of the first version.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h2 class="text-center mt-3 d-print-none">Work together</h2>
+
+      <div class="text-center d-print-none">
+        <a class="btn btn-primary btn-lg" href="mailto:jonas.aschenbrenner@gmail.com" target="_blank">Contact me</a>
+      </div>
+
+      <div style="height: calc(24px + 0.5rem)" class="d-print-none mt-3"></div>
+
+      <div class="d-print-none text-end" style="position: absolute; bottom: 0.5rem; left: 12px; right: 12px;">
+        <a href="imprint.html">Imprint</a>
+      </div>
+    </div>
+  </body>
+</html>
